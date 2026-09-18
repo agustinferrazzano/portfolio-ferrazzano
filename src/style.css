@@ -1212,3 +1212,318 @@ button, input, textarea {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+/* ==========================================================================
+   PROJECTS SYSTEM WRAPPER & TAB SWITCHER
+   ========================================================================== */
+
+.projects-system-wrapper {
+  padding-top: 2rem;
+}
+
+.project-tabs-header-box {
+  background-color: var(--bg-card);
+  border: var(--border-width) solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.tabs-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+  background-color: var(--accent-yellow);
+  color: #000;
+  padding: 0.25rem 0.6rem;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0px #000;
+  margin-bottom: 1rem;
+}
+
+.tabs-nav-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (min-width: 880px) {
+  .tabs-nav-bar {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.tabs-main-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.tabs-main-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
+
+.project-nav-pills {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (min-width: 880px) {
+  .project-nav-pills {
+    width: auto;
+  }
+}
+
+.project-pill-btn {
+  flex: 1;
+  min-width: 200px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: var(--border-width) solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-weight: 800;
+  transition: var(--transition-tactile);
+}
+
+.project-pill-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.project-pill-btn.active {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  transform: translateY(2px);
+  box-shadow: 2px 2px 0 var(--shadow-color);
+}
+
+.project-pill-btn.active#pill-jarvis {
+  border-color: var(--accent-cyan);
+}
+
+.project-pill-btn.active#pill-equilibrio {
+  border-color: var(--accent-yellow);
+}
+
+.pill-number {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.pill-name {
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.pill-badge {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.45rem;
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+  font-weight: 700;
+}
+
+.pill-badge.cyan {
+  color: var(--accent-cyan);
+}
+
+.pill-badge.yellow {
+  color: var(--accent-yellow);
+}
+
+/* ==========================================================================
+   EQUILIBRIO LIVE FINANCIAL SIMULATOR & DASHBOARD
+   ========================================================================== */
+
+.finance-dashboard-box {
+  background-color: var(--bg-card);
+  border: var(--border-width) solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.finance-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.finance-balance-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.finance-balance-amount {
+  font-family: var(--font-mono);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 900;
+  color: var(--text-primary);
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.finance-balance-amount .currency {
+  font-size: 0.9rem;
+  color: var(--accent-cyan);
+}
+
+.finance-status-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--accent-green);
+  background-color: rgba(0, 230, 118, 0.1);
+  padding: 0.35rem 0.65rem;
+  border: 1.5px solid var(--accent-green);
+}
+
+.allocation-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.multi-allocation-bar {
+  display: flex;
+  height: 22px;
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-primary);
+  box-shadow: 2px 2px 0 var(--border-color);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.alloc-segment {
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.alloc-segment:hover {
+  filter: brightness(1.25);
+  transform: scaleY(1.1);
+}
+
+.alloc-segment.btc { background-color: #f7931a; }
+.alloc-segment.spy { background-color: var(--accent-cyan); }
+.alloc-segment.eth { background-color: #627eea; }
+.alloc-segment.cash { background-color: var(--accent-green); }
+
+.asset-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.1rem;
+}
+
+@media (min-width: 600px) {
+  .asset-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.asset-card {
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-primary);
+  padding: 0.75rem;
+  box-shadow: 3px 3px 0 var(--shadow-color);
+  cursor: pointer;
+  transition: var(--transition-tactile);
+}
+
+.asset-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 5px 5px 0 var(--shadow-color);
+}
+
+.asset-card.active {
+  border-color: var(--accent-yellow);
+  background-color: rgba(255, 230, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+.asset-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.asset-ticker {
+  font-family: var(--font-mono);
+  font-weight: 900;
+  font-size: 0.95rem;
+}
+
+.asset-change {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--text-muted);
+}
+
+.asset-change.pos {
+  color: var(--accent-green);
+}
+
+.asset-card-name {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.asset-card-val {
+  font-family: var(--font-mono);
+  font-weight: 900;
+  font-size: 1.05rem;
+  margin-top: 0.35rem;
+}
+
+.asset-card-pct {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.finance-cta-row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+

@@ -69,28 +69,41 @@ export function createGithubCard() {
         </div>
       </div>
 
-      <div style="margin-top: auto; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+      <div style="margin-top: auto; display: flex; gap: 0.6rem; flex-wrap: wrap;">
         <a 
           href="${social.github.url}" 
           target="_blank" 
           rel="noopener noreferrer" 
           class="brutal-btn"
           id="github-visit-profile-btn"
-          style="flex: 1;"
+          style="flex: 1 1 100%;"
         >
-          <span>EXPLORAR GITHUB</span>
+          <span>EXPLORAR GITHUB PROFILE</span>
           <span>↗</span>
         </a>
 
         <a 
-          href="${PORTFOLIO_DATA.featuredProject.githubRepo}" 
+          href="${PORTFOLIO_DATA.featuredProjects.jarvis.githubRepo}" 
           target="_blank" 
           rel="noopener noreferrer" 
           class="brutal-btn cyan"
           id="github-visit-jarvis-btn"
+          style="flex: 1;"
         >
           <span>REPO JARVIS</span>
           <span>⭐</span>
+        </a>
+
+        <a 
+          href="${PORTFOLIO_DATA.featuredProjects.equilibrio.githubRepo}" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="brutal-btn yellow"
+          id="github-visit-equilibrio-btn"
+          style="flex: 1;"
+        >
+          <span>REPO EQUILIBRIO</span>
+          <span>📈</span>
         </a>
       </div>
     </div>

@@ -31,6 +31,11 @@ export function createHero() {
               <span>⚡</span>
             </a>
 
+            <a href="#equilibrio" class="brutal-btn yellow" id="hero-cta-equilibrio">
+              <span>EXPLORAR EQUILIBRIO</span>
+              <span>📊</span>
+            </a>
+
             <a href="${social.github.url}" target="_blank" rel="noopener noreferrer" class="brutal-btn outline" id="hero-cta-github">
               <span>GITHUB</span>
               <span>↗</span>
@@ -42,18 +47,20 @@ export function createHero() {
             </a>
 
             <button class="brutal-btn pink" id="hero-copy-email-btn" data-email="${developer.email}">
-              <span>COPIAR EMAIL</span>
+              <span>EMAIL</span>
               <span>✉</span>
             </button>
           </div>
 
           <div class="hero-stickers">
             <span class="hero-sticker" style="transform: rotate(-1.5deg);">🐍 PYTHON 3.10+</span>
-            <span class="hero-sticker" style="transform: rotate(2deg);">🌐 THREE.JS R128</span>
-            <span class="hero-sticker" style="transform: rotate(-1deg);">🧠 GEMMA 4 E2B LOCAL</span>
-            <span class="hero-sticker" style="transform: rotate(1.5deg);">🏛 CLEAN ARCHITECTURE</span>
-            <span class="hero-sticker" style="transform: rotate(-2deg);">💾 CHROMA RAG</span>
-            <span class="hero-sticker" style="transform: rotate(1deg);">⚡ OFFLINE-FIRST</span>
+            <span class="hero-sticker" style="transform: rotate(2deg);">⚡ NEXT.JS 16 & REACT 19</span>
+            <span class="hero-sticker" style="transform: rotate(-1deg);">🌐 THREE.JS R128</span>
+            <span class="hero-sticker" style="transform: rotate(1.5deg);">🔷 TYPESCRIPT MONOREPO</span>
+            <span class="hero-sticker" style="transform: rotate(-2deg);">🧠 GEMMA 4 E2B LOCAL</span>
+            <span class="hero-sticker" style="transform: rotate(1deg);">🏛 CLEAN ARCHITECTURE (DDD)</span>
+            <span class="hero-sticker" style="transform: rotate(-1deg);">💾 CHROMA RAG & SQLITE</span>
+            <span class="hero-sticker" style="transform: rotate(2deg);">🐳 DOCKER COMPOSE</span>
           </div>
         </div>
 
@@ -90,21 +97,26 @@ export function createHero() {
                 </div>
                 <div class="stat-item">
                   <span class="label">ENFOQUE TÉCNICO</span>
-                  <span class="val">IA Local, 3D & Clean Arch</span>
+                  <span class="val">IA Local, Clean Arch & Web 3D</span>
                 </div>
                 <div class="stat-item">
                   <span class="label">GITHUB HANDLE</span>
                   <span class="val">@${social.github.username}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="label">PROYECTO ACTIVO</span>
-                  <span class="val" style="color: var(--accent-pink);">J.A.R.V.I.S. (Open Source)</span>
+                  <span class="label">PROYECTOS ACTIVOS</span>
+                  <span class="val" style="color: var(--accent-pink);">J.A.R.V.I.S. & Equilibrio-app</span>
                 </div>
               </div>
 
-              <a href="#jarvis" class="brutal-btn outline" style="width: 100%;">
-                VER DEMO INTERACTIVA 3D ↓
-              </a>
+              <div style="display: flex; gap: 0.5rem; width: 100%;">
+                <a href="#jarvis" class="brutal-btn outline" style="flex: 1; font-size: 0.78rem; padding: 0.5rem;">
+                  JARVIS (3D) ↓
+                </a>
+                <a href="#equilibrio" class="brutal-btn yellow" style="flex: 1; font-size: 0.78rem; padding: 0.5rem;">
+                  EQUILIBRIO ↓
+                </a>
+              </div>
             </div>
           </div>
         </div>
